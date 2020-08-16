@@ -1,6 +1,7 @@
-**Classe Program:**
 
-```java
+Classe Program:
+
+
 import java.util.Scanner;
 
 class index {
@@ -35,11 +36,12 @@ class index {
     }
 
 }
-```
 
-**Classe Employee (Empregado):**
+------------------------------------------------------------------------------------------------------------------------------
 
-```java
+Classe Employee (Empregado):
+
+
 public class Employee {
 
     private String name;
@@ -85,11 +87,11 @@ public class Employee {
         this.valuePerHour = valuePerHour;
     }
 }
-```
 
-**Classe OusourcedEmployee (Empregado Terceirazado):**
+------------------------------------------------------------------------------------
 
-```java
+Classe OusourcedEmployee (Empregado Terceirazado):
+
 
 public class OutsouredEmployee extends Employee{
 
@@ -109,4 +111,3 @@ public class OutsouredEmployee extends Employee{
     }
 }
 
-```
