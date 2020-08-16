@@ -1,0 +1,112 @@
+**Classe Program:**
+
+```java
+import java.util.Scanner;
+
+class index {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+
+        OutsouredEmployee two = new OutsouredEmployee();
+        Employee one = new Employee();
+
+        System.out.println("Digite seu nome");
+        one.setName(myObj.nextLine());
+
+        System.out.println("Digite o numero de horas trabalhadas");
+        one.setHours(myObj.nextInt());
+
+        System.out.println("\nDigite o valor da hora");
+        one.setValuePerHour(myObj.nextDouble());
+
+        System.out.println(one.payment(one.getValuePerHour(), one.getHours()));
+
+        System.out.println("Digite seu nome");
+        two.setName(myObj.next());
+
+        System.out.println("Digite o numero de horas trabalhadas");
+        two.setHours(myObj.nextInt());
+
+        System.out.println("Digite o valor da hora");
+        two.setValuePerHour(myObj.nextDouble());
+
+        System.out.println(two.payment(two.getValuePerHour(), two.getHours()));
+
+    }
+
+}
+```
+
+**Classe Employee (Empregado):**
+
+```java
+public class Employee {
+
+    private String name;
+    private int hours;
+    private double valuePerHour;
+
+    public Employee() {
+
+    }
+
+    public Employee(String name, int hours, double valuePerHour) {
+        this.name = name;
+        this.hours = hours;
+        this.valuePerHour = valuePerHour;
+    }
+
+    public double payment(double valuePerHour, int hours){
+        System.out.println("O valor do pagamento é: ");
+        return valuePerHour * hours;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
+    public double getValuePerHour() {
+        return valuePerHour;
+    }
+
+    public void setValuePerHour(double valuePerHour) {
+        this.valuePerHour = valuePerHour;
+    }
+}
+```
+
+**Classe OusourcedEmployee (Empregado Terceirazado):**
+
+```java
+
+public class OutsouredEmployee extends Employee{
+
+    private double addicionalCharge = 1.1;
+
+    public OutsouredEmployee(){
+
+    }
+    public OutsouredEmployee(String name, int hours, double valuePerHour) {
+        super(name, hours, valuePerHour);
+    }
+
+    @Override
+    public double payment(double valuePerHour, int hours) {
+        System.out.println("O valor do pagamento é: ");
+        return valuePerHour * hours * addicionalCharge;
+    }
+}
+
+```
