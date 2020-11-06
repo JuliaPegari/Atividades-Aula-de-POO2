@@ -1,6 +1,4 @@
-package Exercicio3;
-
-import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
+package Exercicio3_1bi;
 
 import java.util.Scanner;
 

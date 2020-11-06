@@ -1,4 +1,4 @@
-package Exercicio2;
+package Exercicio2_1bi;
 
 public class Paypal implements PagamentoOnline{
 

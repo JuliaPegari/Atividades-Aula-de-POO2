@@ -1,4 +1,4 @@
-package Exercicio2;
+package Exercicio2_1bi;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

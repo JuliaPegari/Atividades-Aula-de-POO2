@@ -1,4 +1,4 @@
-package Exercicio3;
+package Exercicio3_1bi;
 
 public class Conta {
 
